@@ -1,0 +1,571 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    </head>
+    <body>
+    <nav id="desktop-nav">
+        <div class="logo">Prayag Parikh</div>
+        <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Prayag Parikh</div>
+        <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Prayag's profile picture" />
+        </div>
+        <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Prayag Parikh</h1>
+        <p class="section__text__p2">Software Engineer <br/> AI Enthusiast</p>
+        <div class="btn-container">
+            <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/prayag_parikh_resume.pdf')"
+            >
+            Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="window.open('https://linkedin.com/in/prayag-parikh', '_blank')"
+            />
+            <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="window.open('https://github.com/Prayagparikh', '_blank')"
+            />
+            <img
+                src="https://i.pinimg.com/736x/41/e4/57/41e457e8599833299d563976b7d3c59a.jpg"
+                alt="My Instagram"
+                class="icon"
+                onclick="window.open('https://www.instagram.com/prayag_parikh15/', '_blank')"
+            />
+        </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+        <div class="section__pic-container">
+            <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+            />
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+            <div class="details-container">
+                <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+                />
+                <h3>Experience</h3>
+                <p>2+ years <br />Software Engineer <br/> Backend Developer </p>
+            </div>
+            <div class="details-container">
+                <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+                />
+                <h3>Education</h3>
+                <p>MS - Computer Science (School: UT-Arlington) <br/> BS - Information Technology</p>
+            </div>
+            </div>
+            <div class="text-container">
+            <p>
+                I'm a Software Engineer based in the United States. I enjoy solving problems and creating projects that simplify life for myself and others. Learning something new daily about various topics, from tech to history, challenges my old thinking and motivates me to improve.
+                <br/><br/>
+                While working at TCS, I had the opportunity to work on two R&D projects as a Backend Developer for Fortune 100 customers such as General Electric (GE). I believe that "Knowledge is empowerment!" and I have been fortunate to help 150+ students at my university during my Master's in subjects like Database Systems and Discrete Structures as a Teaching Assistant.
+            </p>
+            </div>
+        </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>JavaScript</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>SQL</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>C++</h3>
+                    <p>Intermediate</p>
+                </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>Unix Shell Scripting</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+            </div>
+            </div>
+
+        <!-- New Experience -->
+            <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Node JS</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>Express JS</h3>
+                    <p>Intermediate</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>RESTful APIs</h3>
+                    <p>Experienced</p>
+                </div>
+                </article>
+                <article>
+                <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                />
+                <div>
+                    <h3>MySQL</h3>
+                    <p>Intermediate</p>
+                </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>PostgreSQL</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>Flask</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>Spring Boot</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+            </div>
+            </div>
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">Cloud and Tools</h2>
+                <div class="article-container">
+                    <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>Azure Cloud</h3>
+                        <p>Basic</p>
+                    </div>
+                    </article>
+                    <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>AWS(S3, Lambda)</h3>
+                        <p>Basic</p>
+                    </div>
+                    </article>
+                    <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>Git</h3>
+                        <p>Intermediate</p>
+                    </div>
+                    </article>
+                    <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>Jira</h3>
+                        <p>Intermediate</p>
+                    </div>
+                    </article>
+                    <article>
+                        <img
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>Docker Containers</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Postman</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                    </article>
+                </div>
+            </div>
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                    <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Intermediate</p>
+                    </div>
+                    </article>
+                    <article>
+                        <img
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>Cascading Style Sheets</h3>
+                            <p>Basic</p>
+                        </div>
+                        </article>
+                    <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3>React JS</h3>
+                        <p>Intermediate</p>
+                    </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        />
+    </section>
+
+    <!-- Projects section -->
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Celebrity Face Recognition and OpenAI Model based Story Generation</h2>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Prayagparikh/Facilitating-Knowledge-with-Image-Recognition-of-Public-Figure-Faces-MTCNN-Facenet-OpenAI', '_blank')"
+                >
+                Github
+                </button>
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7137924978628333568/', '_blank')"
+                >
+                Demo Video
+                </button>
+            </div>
+            </div>
+
+        <!-- New Project -->
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Chatroom Web App</h2>
+        <!-- New Project -->
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Prayagparikh/Chatroom-WebApp-NodeJS', '_blank')"
+                >
+                Github
+                </button>
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://prayag-chatroom-webapp.onrender.com/', '_blank')"
+                >
+                Live Demo
+                </button>
+            </div>
+            </div>
+        
+        <!-- New Project -->
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Task Manager Web App</h2>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Prayagparikh/node-task-manager-api', '_blank')"
+                >
+                Github
+                </button>
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://node-task-manager-vuue.onrender.com/index.html', '_blank')"
+                >
+                Live Demo
+                </button>
+            </div>
+            </div>
+
+        <!-- New project -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                    src="./assets/project-3.png"
+                    alt="Project 3"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Task Manager Web App</h2>
+                <div class="btn-container">
+                    <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://github.com/Prayagparikh/node-task-manager-api', '_blank')"
+                    >
+                    Github
+                    </button>
+                    <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://node-task-manager-vuue.onrender.com/index.html', '_blank')"
+                    >
+                    Live Demo
+                    </button>
+                </div>
+                </div>
+        </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">prayagparikh1508@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+            />
+            <p><a target="_blank" href="https://www.linkedin.com/in/prayag-parikh">LinkedIn</a></p>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+        <p>Copyright &#169; 2024 Prayag Parikh. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+    </html>

@@ -16,6 +16,7 @@
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#achievement">Achievements</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -32,6 +33,7 @@
         <div class="menu-links">
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#achievement" onclick="toggleMenu()">Achievements</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -45,12 +47,11 @@
         <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Prayag Parikh</h1>
-        <p class="section__text__p2">Software Engineer <br/> AI & Computer Vision Enthusiast</p>
+        <p class="section__text__p2">Software Engineer <br/>AWS Certified Cloud Practitioner<br/>ML & Computer Vision Enthusiast</p>
         <div class="btn-container">
             <button
             class="btn btn-color-2"
             onclick="window.open('https://drive.google.com/file/d/1gk4lDiNs_aoA_0b3yVFFxTKHwtuAlrJZ/view?usp=sharing', '_blank')"
-
             >
             Download Resume
             </button>
@@ -306,8 +307,8 @@
                         class="icon"
                     />
                     <div>
-                        <h3>Azure Cloud</h3>
-                        <p>Basic</p>
+                        <h3>AWS(Certified Practitioner)</h3>
+                        <p>Intermediate</p>
                     </div>
                     </article>
                     <article>
@@ -317,7 +318,7 @@
                         class="icon"
                     />
                     <div>
-                        <h3>AWS(S3, Lambda)</h3>
+                        <h3>Azure Cloud</h3>
                         <p>Basic</p>
                     </div>
                     </article>
@@ -416,10 +417,50 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
+        onclick="location.href='./#achievement'"
+        />
+    </section>
+    
+    <section id="achievement">
+        <p class="section__text__p1">Checkout my recent</p>
+        <h1 class="title">Achievement</h1>
+        <div class="experience-details-container">
+        <div class="about-containers">
+        
+
+        <!-- New project -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                    src="./assets/ccp.png"
+                    alt="AWS Cloud Practitioner Badge image"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">AWS Certified Cloud Practitioner</h2>
+                <p><strong>Issued Jun 2024 - Expires Jun 2027</strong></p><br/>
+                <p><strong>About Certification:</strong> Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge. Badge owners are able to identify essential AWS services necessary to set up AWS-focused projects.</p><br/>
+                    <div class="btn-container">
+                    <button
+                    class="btn btn-color-1"
+                    onclick="window.open('https://www.credly.com/badges/79a7ba45-8155-488e-aa68-5c3be5f51c09/public_url', '_blank')"
+                    >
+                    View Credential
+                    </button>
+                </div>
+                </div>
+
+        </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
         onclick="location.href='./#projects'"
         />
     </section>
-
+    
+    
 <!-- Projects section -->
 
     <section id="projects">
@@ -596,9 +637,9 @@
         class="icon arrow"
         onclick="location.href='./#contact'"
         />
-
-<!-- Contact Section -->
     </section>
+
+
     <section id="contact">
         <p class="section__text__p1">Don't Be Shy, Get in Touch</p>
         <h1 class="title">Contact Me</h1>
@@ -637,3 +678,13 @@
     <script src="script.js"></script>
     </body>
     </html>
+
+
+<!-- One Important change in achievements section
+    Problem: Projects and achievements sections overlaps with each other so to resolve I temporarily tried in style.css added the #achievement margin-bottom property. Remember its a very naive solution
+    
+    #achievement {
+        position: relative; /* This ensures the section is positioned relative to its normal position */
+        margin-bottom: 50rem; /* Add some margin to ensure spacing between sections */
+}
+-->

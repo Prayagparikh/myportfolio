@@ -10,6 +10,10 @@
     #projects {
       height: fit-content;
     }
+    #achievement {
+      height: fit-content;
+      margin-bottom: 0;
+    }
   }
   
   @media screen and (max-width: 1200px) {
